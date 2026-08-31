@@ -68,7 +68,7 @@ def subscribe():
         # Salvar
         save_subscribers(subscribers)
         
-        print(f"✅ Novo inscrito: {name} ({email})")
+        print(f"[OK] Novo inscrito: {name} ({email})")
         
         return jsonify({
             'success': True,
@@ -76,7 +76,7 @@ def subscribe():
         }), 201
         
     except Exception as e:
-        print(f"❌ Erro: {str(e)}")
+        print(f"[ERRO] {str(e)}")
         return jsonify({'error': 'Erro interno do servidor'}), 500
 
 @app.route('/api/subscribers', methods=['GET'])
@@ -89,6 +89,6 @@ def list_subscribers():
     })
 
 if __name__ == '__main__':
-    print("🚀 Servidor rodando em http://localhost:5000")
-    print("📂 Arquivos servidos da pasta atual")
+    print("Servidor rodando em http://localhost:5000")
+    print("Arquivos servidos da pasta atual")
     app.run(debug=True, port=5000)

@@ -20,6 +20,64 @@
 </head>
 
 <body>
+    <!-- Biblioteca vetorial: todos os antigos emojis agora usam SVG -->
+    <svg class="svg-sprite" aria-hidden="true" focusable="false">
+        <symbol id="icon-cocktail" viewBox="0 0 24 24">
+            <path d="M4 3h16l-6.5 8v7.5H18V21H6v-2.5h4.5V11L4 3Z"/>
+            <path d="M7.5 6h9M17.5 3l2-2M17.5 7h3"/>
+        </symbol>
+        <symbol id="icon-cake" viewBox="0 0 24 24">
+            <path d="M4 10h16v11H4V10Zm0 5c2 2 4 2 6 0 2 2 4 2 6 0 1.3 1.3 2.7 1.7 4 1"/>
+            <path d="M8 10V7m4 3V6m4 4V7M7 7h2M11 6h2m2 1h2"/>
+        </symbol>
+        <symbol id="icon-tent" viewBox="0 0 24 24">
+            <path d="M3 20 12 4l9 16H3Z"/>
+            <path d="m12 4 3 16m-3-7-5 7"/>
+            <path d="M2 20h20"/>
+        </symbol>
+        <symbol id="icon-tree" viewBox="0 0 24 24">
+            <path d="M12 22v-7m-5 7h10"/>
+            <path d="M12 3a4 4 0 0 0-3.8 2.8A4.5 4.5 0 0 0 7 14.6c1.1.4 2.3.2 3.2-.4a4.2 4.2 0 0 0 7-.7A4 4 0 0 0 17 6a5 5 0 0 0-5-3Z"/>
+        </symbol>
+        <symbol id="icon-sparkles" viewBox="0 0 24 24">
+            <path d="m12 3 1.3 3.7L17 8l-3.7 1.3L12 13l-1.3-3.7L7 8l3.7-1.3L12 3Z"/>
+            <path d="m19 14 .8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14ZM5 13l.8 2.2L8 16l-2.2.8L5 19l-.8-2.2L2 16l2.2-.8L5 13Z"/>
+        </symbol>
+        <symbol id="icon-chef" viewBox="0 0 24 24">
+            <path d="M7 11a4 4 0 1 1 2.7-6.9A4.5 4.5 0 0 1 18 6a3.5 3.5 0 0 1-1 6.9V20H7v-9Z"/>
+            <path d="M7 15h10m-7-4v3m4-3v3"/>
+        </symbol>
+        <symbol id="icon-shield" viewBox="0 0 24 24">
+            <path d="M12 3 20 6v6c0 5-3.4 8-8 10-4.6-2-8-5-8-10V6l8-3Z"/>
+            <path d="m8.5 12 2.2 2.2 4.8-5"/>
+        </symbol>
+        <symbol id="icon-masks" viewBox="0 0 24 24">
+            <path d="M3 5c3-1 6-1 9 0v6c0 4-2 6-4.5 7C5 17 3 15 3 11V5Z"/>
+            <path d="M12 7c3-1 6-1 9 0v6c0 4-2 6-4.5 7a7.4 7.4 0 0 1-4.3-3.8"/>
+            <path d="M5.5 9h1m3 0h1M5.5 13c1.3 1 2.7 1 4 0m5-2h1m3 0h1m-5 4c1.3-1 2.7-1 4 0"/>
+        </symbol>
+        <symbol id="icon-star" viewBox="0 0 24 24">
+            <path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.5 1.1 6.3-5.6-3-5.6 3 1.1-6.3-4.6-4.5 6.3-.9L12 2.8Z"/>
+        </symbol>
+        <symbol id="icon-map-pin" viewBox="0 0 24 24">
+            <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+            <circle cx="12" cy="10" r="2.5"/>
+        </symbol>
+        <symbol id="icon-phone" viewBox="0 0 24 24">
+            <path d="M6.6 3.5 9 8l-2.2 2c1.4 3 3.8 5.4 6.8 6.8l2-2.2L20.5 17v3a2 2 0 0 1-2.2 2C9.7 21 3 14.3 2 5.7A2 2 0 0 1 4 3.5h2.6Z"/>
+        </symbol>
+        <symbol id="icon-clock" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 7v5l3.5 2"/>
+        </symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m4 7 8 6 8-6"/>
+        </symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24">
+            <path d="m5 12.5 4.2 4.2L19 7"/>
+        </symbol>
+    </svg>
     <!-- Header -->
     <header class="header" id="header">
         <div class="container">
@@ -72,22 +130,22 @@
             <p class="section-subtitle fade-in">Ambientes preparados para tornar sua festa inesquecível</p>
             <div class="services-grid">
                 <div class="service-card fade-in">
-                    <div class="service-icon">🍹</div>
+                    <div class="service-icon"><svg aria-hidden="true"><use href="#icon-cocktail"></use></svg></div>
                     <h3>Ilha de Drinks</h3>
                     <p>Variedade de sabores e combinações exclusivas para brindar com estilo em qualquer ocasião</p>
                 </div>
                 <div class="service-card fade-in">
-                    <div class="service-icon">🍰</div>
+                    <div class="service-icon"><svg aria-hidden="true"><use href="#icon-cake"></use></svg></div>
                     <h3>Buffet Completo</h3>
                     <p>Cardápio variado e delicioso para encantar todos os convidados</p>
                 </div>
                 <div class="service-card fade-in">
-                    <div class="service-icon">🎪</div>
+                    <div class="service-icon"><svg aria-hidden="true"><use href="#icon-tent"></use></svg></div>
                     <h3>Área Kids</h3>
                     <p>Piscina de bolinhas, pula-pula e muito mais diversão</p>
                 </div>
                 <div class="service-card fade-in">
-                    <div class="service-icon">🌳</div>
+                    <div class="service-icon"><svg aria-hidden="true"><use href="#icon-tree"></use></svg></div>
                     <h3>Jardim</h3>
                     <p>Área externa ampla e arborizada para festas ao ar livre</p>
                 </div>
@@ -113,19 +171,19 @@
                     segurança e muito carinho em cada detalhe.</p>
                 <div class="about-features">
                     <div class="about-feature">
-                        <div class="about-feature-icon">✨</div>
+                        <div class="about-feature-icon"><svg aria-hidden="true"><use href="#icon-sparkles"></use></svg></div>
                         <span>Decoração Personalizada</span>
                     </div>
                     <div class="about-feature">
-                        <div class="about-feature-icon">👨‍🍳</div>
+                        <div class="about-feature-icon"><svg aria-hidden="true"><use href="#icon-chef"></use></svg></div>
                         <span>Buffet de Qualidade</span>
                     </div>
                     <div class="about-feature">
-                        <div class="about-feature-icon">🛡️</div>
+                        <div class="about-feature-icon"><svg aria-hidden="true"><use href="#icon-shield"></use></svg></div>
                         <span>Ambiente Seguro</span>
                     </div>
                     <div class="about-feature">
-                        <div class="about-feature-icon">🎭</div>
+                        <div class="about-feature-icon"><svg aria-hidden="true"><use href="#icon-masks"></use></svg></div>
                         <span>Recreação Inclusa</span>
                     </div>
                 </div>
@@ -233,7 +291,13 @@
             <p class="section-subtitle fade-in">Depoimentos de quem já celebrou conosco</p>
             <div class="testimonials-grid">
                 <div class="testimonial-card fade-in">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-stars" aria-label="5 de 5 estrelas">
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                    </div>
                     <p class="testimonial-text">"O Espaço Brisa Festas e Eventos é simplesmente encantador! Um lugar
                         lindo, com uma estrutura impecável que transforma qualquer celebração em um momento
                         inesquecível. Os profissionais são excelentes, sempre prontos para atender com carinho,
@@ -249,7 +313,13 @@
                     </div>
                 </div>
                 <div class="testimonial-card fade-in">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-stars" aria-label="5 de 5 estrelas">
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                    </div>
                     <p class="testimonial-text">"Minha festa foi um sonho, recepção maravilhosa, tudo em acordo que foi
                         proposto foi cumprindo. Meu filho amou, todos nós amamos! Fecharei com certeza ano que vem!!!"
                     </p>
@@ -262,7 +332,13 @@
                     </div>
                 </div>
                 <div class="testimonial-card fade-in">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-stars" aria-label="5 de 5 estrelas">
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                        <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+                    </div>
                     <p class="testimonial-text">"Melhor investimento que tive sonho realizado, meu evento ficou marcado
                         na história belo ambiente super organizado e uma equipe
                         Super profissional muito obg mika pela evento que vc fez vela produção"</p>
@@ -300,21 +376,27 @@
                     orçamento personalizado!</p>
                 <div class="contact-details">
                     <div class="contact-item">
-                        <img src="images/icon end.webp" alt="Telefone" class="contact-item-icon">
+                        <span class="contact-item-icon" aria-hidden="true">
+                            <svg><use href="#icon-map-pin"></use></svg>
+                        </span>
                         <div class="contact-item-text">
                             <h4>Endereço</h4>
                             <span>Chácara, 101 - Sol Nascente Ceilândia- DF</span>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <img src="images/icon cell.jpg" alt="Telefone" class="contact-item-icon">
+                        <span class="contact-item-icon" aria-hidden="true">
+                            <svg><use href="#icon-phone"></use></svg>
+                        </span>
                         <div class="contact-item-text">
                             <h4>Telefone</h4>
                             <span>(61) 98283-0878</span>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <img src="images/icon data.png" alt="Telefone" class="contact-item-icon">
+                        <span class="contact-item-icon" aria-hidden="true">
+                            <svg><use href="#icon-clock"></use></svg>
+                        </span>
                         <div class="contact-item-text">
                             <h4>Horário</h4>
                             <span>Aberto 24h</span>
@@ -436,7 +518,7 @@
       <button class="modal-close" id="closeModal">&times;</button>
       
       <div class="modal-content" id="formContent">
-        <h2>📬 Fique por dentro!</h2>
+        <h2 class="modal-title"><svg aria-hidden="true"><use href="#icon-mail"></use></svg>Fique por dentro!</h2>
         <p>Cadastre-se para receber novidades e promoções exclusivas.</p>
         
         <form id="newsletterForm">
@@ -459,7 +541,7 @@
 
       <!-- Mensagem de Sucesso -->
       <div class="success-content" id="successContent" style="display: none;">
-        <div class="success-icon">✓</div>
+        <div class="success-icon"><svg aria-hidden="true"><use href="#icon-check"></use></svg></div>
         <h2>Cadastro realizado!</h2>
         <p>Você receberá nossas novidades em breve.</p>
       </div>
